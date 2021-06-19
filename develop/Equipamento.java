@@ -10,11 +10,7 @@ public class Equipamento {
   public Equipamento(int umasPortas) {
     this.portas = umasPortas;
   }
-
-  public int getPortas() {
-    return this.portas;
-  }
-
+  
   // toString
   public String toString() {
     return "número de portas: " + this.portas;

@@ -11,7 +11,4 @@ public class Hub extends Equipamento {
     return "Sou um hub, " + super.toString();
   }
 }
-/*
- * // toString public String toString() { return ("número de portas: " +
- * umasPortas); }
- */
+
