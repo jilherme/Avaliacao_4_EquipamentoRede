@@ -1,5 +1,4 @@
-package develop;
-//package Avaliação4;
+package src;
 
 // Número de portas:
 // Suporta VLANs? (s/n): criar na sub-sub-classe
@@ -10,7 +9,7 @@ public class Equipamento {
   public Equipamento(int umasPortas) {
     this.portas = umasPortas;
   }
-  
+
   // toString
   public String toString() {
     return "número de portas: " + this.portas;

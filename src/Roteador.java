@@ -1,16 +1,16 @@
-//package Avaliação4;
+package src;
 
 class Roteador extends EquipamentoVLAN {
-  private boolean firewall;
+  private boolean fw;
 
-  public Roteador(int umasPortas, String fw) {
-    super(umasPortas, fw);
-    this.firewall = fw;
+  public Roteador(int umasPortas, Boolean umaVLAN, Boolean umaVlanTrunk, Boolean firewall) {
+    super(umasPortas, umaVLAN, umaVlanTrunk);
+    this.fw = firewall;
   }
 
   // toString
   public String toString() {
-    if (this.firewall) {
+    if (fw) {
       return "Sou um roteador, " + super.toString() + ", tem firewall stateful";
     } else {
       return "Sou um roteador, " + super.toString() + ", não tem firewall stateful";

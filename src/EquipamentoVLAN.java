@@ -1,12 +1,11 @@
-package develop;
-//package Avaliação4;
+package src;
 
 class EquipamentoVLAN extends Equipamento {
 
-  private String suportaVLANs;
-  private String suportaVlanTrunk;
+  private Boolean suportaVLANs;
+  private Boolean suportaVlanTrunk;
 
-  public EquipamentoVLAN(int umasPortas, String umaVLAN, String vlanTrunk) {
+  public EquipamentoVLAN(int umasPortas, Boolean umaVLAN, Boolean vlanTrunk) {
     super(umasPortas);
     this.suportaVLANs = umaVLAN;
     this.suportaVlanTrunk = vlanTrunk;
@@ -15,14 +14,12 @@ class EquipamentoVLAN extends Equipamento {
   /*
    * public String temSuporteAVLANs() { return this.suportaVLANs; }
    */
-  boolean suportaV = (this.suportaVLANs == "s");
-  boolean suportaVT = (this.suportaVlanTrunk == "s");
 
   // toString
   public String toString() {
-    if (suportaV && suportaVT) {
+    if (suportaVLANs && suportaVlanTrunk) {
       return super.toString() + ", com suporte a VLANs e VLAN Trunks";
-    } else if (suportaV && !suportaVT) {
+    } else if (suportaVLANs && !suportaVlanTrunk) {
       return super.toString() + ", com suporte somente a VLANs.";
     } else {
       return super.toString() + ", sem suporte a VLANs";

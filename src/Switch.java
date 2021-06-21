@@ -1,12 +1,8 @@
-package develop;
-//package Avaliação4;
+package src;
 
 class Switch extends EquipamentoVLAN {
-  String suportaVlanTrunk;
-
-  public Switch(int umasPortas, String umaVLAN, String umaVlanTrunk) {
+  public Switch(int umasPortas, Boolean umaVLAN, Boolean umaVlanTrunk) {
     super(umasPortas, umaVLAN, umaVlanTrunk);
-    this.suportaVlanTrunk = umaVlanTrunk;
   }
 
   // toString
