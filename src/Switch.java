@@ -1,9 +1,8 @@
-//package Avaliação4;
+package src;
 
 class Switch extends EquipamentoVLAN {
-
-  public Switch(int umasPortas, boolean vlans) {
-    super(umasPortas, vlans);
+  public Switch(int umasPortas, Boolean umaVLAN, Boolean umaVlanTrunk) {
+    super(umasPortas, umaVLAN, umaVlanTrunk);
   }
 
   // toString

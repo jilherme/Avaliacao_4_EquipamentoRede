@@ -1,4 +1,4 @@
-//package Avaliação4;
+package src;
 
 // nem sabia que dava pra extender em outro arquivo
 public class Hub extends Equipamento {
@@ -10,7 +10,3 @@ public class Hub extends Equipamento {
     return "Sou um hub, " + super.toString();
   }
 }
-/*
- * // toString public String toString() { return ("número de portas: " +
- * umasPortas); }
- */
